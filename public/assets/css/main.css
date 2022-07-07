@@ -1,0 +1,128 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: IRANYekan, "Segoe UI", tahoma, Verdana, Arial, sans-serif !important;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    direction: rtl;
+    position: relative;
+    background-color: #6868ff;
+    display: flex;
+}
+
+
+.sidebar {
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 350px;
+    background-color: #ededed;
+    padding: 20px;
+    transition: ease 0.5s;
+}
+
+hr {
+    background-color: #000;
+    border: 1px solid #000;
+}
+
+.sidebar.hidden {
+    display: none;
+    transition: 0.5s;
+}
+
+.sidebar .close-btn {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+.sidebar .close-btn:hover {
+    cursor: pointer;
+}
+
+.sidebar form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar form button {
+    background-color: #6868ff;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.wrapper {
+    width: 100%;
+    /*margin-right: 350px;*/
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.add-task {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.add-task:hover {
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.task {
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.task-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+}
+
+.task .checkbox {
+    display: flex;
+}
+
+.task:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.task.done label {
+    text-decoration: line-through;
+}
+
+.task input {
+    width: 30px;
+}
+
+/*# sourceMappingURL=main.css.map */

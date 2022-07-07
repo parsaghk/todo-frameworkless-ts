@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>لیست انجام کار</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+  <body>
+
+    <div class="sidebar hidden">
+      <img class="close-btn" alt="close-btn" src="./assets/images/close.svg">
+      <form action="">
+        <div class="input-group">
+          <label for="title">عنوان کار</label>
+          <input type="text" name="title" id="title">
+        </div>
+        <div class="input-group">
+          <label for="startedAt">تاریخ و زمان شروع</label>
+          <input type="datetime-local" name="startedAt" id="startedAt">
+        </div>
+        <div class="input-group">
+          <label for="endedAt">تاریخ و زمان پایان</label>
+          <input type="datetime-local" name="endedAt" id="endedAt">
+        </div>
+        <button type="submit">تایید</button>
+      </form>
+    </div>
+    <div class="wrapper">
+
+      <div class="header">
+        <h1>لیست کارها</h1>
+        <span class="add-task">اضافه کردن تسک +</span>
+      </div>
+      <div class="task-container inCompleted-task-list">
+
+      </div>
+      <hr>
+      <div class="task-container completed-task-list">
+
+      </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
